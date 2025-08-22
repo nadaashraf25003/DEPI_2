@@ -1,0 +1,384 @@
+/* =========== Font ===========  */
+@import url("https://fonts.googleapis.com/css2?family=Mozilla+Headline:wght@200..700&display=swap");
+
+/* =========== Global Styles ===========  */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+:root {
+  --second-color: #303e45;
+  --white-color: #fff;
+  --bg-color: #ffffff;
+  --btn-color: #4d636f;
+  --btn-hover-color: #cccccc;
+  --text-color: #000;
+  --hover-text-color: #414040;
+  --body: #f5f7f8;
+}
+body.dark {
+  /* --white-color: #303030; */
+  --bg-color: #303030;
+  --btn-color: #4d636f;
+  --btn-hover-color: #cccccc;
+  --text-color: #fff;
+  --hover-text-color: #969494;
+  --body: #1e1e1e;
+}
+h2,
+h3,
+h4 {
+  font-size: 20px;
+  color: var(--text-color);
+}
+li p,
+span {
+  color: var(--text-color);
+}
+::selection {
+  background-color: var(--btn-color);
+  color: var(--white-color);
+}
+p {
+  color: var(--hover-text-color);
+}
+body {
+  font-family: "Mozilla Headline", sans-serif;
+  background-color: var(--body);
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.mrgButton {
+  margin-bottom: 1rem;
+}
+.card {
+  background-color: var(--bg-color);
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+.cardcenter {
+  background-color: var(--bg-color);
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+hr {
+  color: var(--bg-color);
+}
+/* =========== Images ===========  */
+img.user {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+img.user2 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+img.user3 {
+  width: 100px;
+  height: 100px;
+}
+/* =========== Buttons ===========  */
+button {
+  background-color: var(--btn-color);
+  color: var(--white-color);
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+button.txt i {
+  margin-right: 10px;
+}
+button:hover {
+  background-color: var(--btn-hover-color);
+  color: var(--btn-color);
+}
+.up {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+}
+.theme {
+  position: fixed;
+  bottom: 80px;
+  right: 30px;
+}
+
+/* =========== Header ===========  */
+header {
+  background-color: var(--btn-color);
+  padding: 0 2rem 0 0;
+}
+header img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+header i {
+  color: white;
+  padding: 0 1rem;
+  font-size: 1.2rem;
+  padding: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+header .logo {
+  padding-right: 2.5rem;
+  background-color: var(--second-color);
+}
+header .logo i,
+header .logo p {
+  color: white;
+  font-size: 1.2rem;
+}
+header i:hover {
+  color: var(--btn-color);
+  background-color: white;
+}
+header nav ul li:last-child {
+  position: relative;
+}
+header nav ul li:last-child span {
+  position: absolute;
+  margin-left: -15px;
+  margin-top: 10px;
+  width: 28px;
+  height: 18px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 200;
+  background-color: #4caf50;
+  color: white;
+}
+
+.collapse , .close {
+  display: none;
+  cursor: pointer;
+}
+/* =========== Main Section ===========  */
+main {
+  display: grid;
+  grid-template-columns: 2fr 4fr 1fr;
+  margin: 5rem;
+  gap: 1rem;
+}
+input {
+  padding: 0.5rem;
+  width: 100%;
+}
+main section:nth-child(1) .sec1 ul li i {
+  margin: 1rem;
+  color: var(--btn-color);
+}
+
+main section:nth-child(1) .sec2 li {
+  background-color: var(--btn-color);
+  color: white;
+  padding: 0.8rem 1rem;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+main section:nth-child(1) .sec2 li:hover {
+  background-color: white;
+  color: #000;
+}
+main section:nth-child(1) .sec2 li span {
+  color: white;
+  margin-left: 0.5rem;
+}
+main section:nth-child(1) .sec2 li:hover span {
+  color: #000;
+}
+main section:nth-child(1) .sec3 {
+  background-color: var(--bg-color);
+  padding: 1rem;
+}
+main section:nth-child(1) .sec3 span {
+  display: inline-block;
+  color: white;
+  padding: 0.1rem 0.5rem;
+  margin: 0.2rem 0;
+  font-size: 12px;
+}
+main section:nth-child(1) .sec3 span:nth-child(2) {
+  background-color: #303e45;
+}
+main section:nth-child(1) .sec3 span:nth-child(3) {
+  background-color: #3a4b53;
+}
+main section:nth-child(1) .sec3 span:nth-child(4) {
+  background-color: #435761;
+}
+main section:nth-child(1) .sec3 span:nth-child(5) {
+  background-color: #4d636f;
+}
+main section:nth-child(1) .sec3 span:nth-child(6) {
+  background-color: #57707d;
+}
+main section:nth-child(1) .sec3 span:nth-child(7) {
+  background-color: #607d8b;
+}
+main section:nth-child(1) .sec3 span:nth-child(8) {
+  background-color: #7d97a5;
+}
+main section:nth-child(1) .sec3 span:nth-child(9) {
+  background-color: #9eb1bb;
+  color: #000;
+}
+main section:nth-child(1) .sec3 span:nth-child(10) {
+  background-color: #becbd2;
+  color: #000;
+}
+main section:nth-child(1) .sec3 span:nth-child(11) {
+  background-color: #dfe5e8;
+  color: #000;
+}
+main section:nth-child(1) .sec3 span:nth-child(12) {
+  background-color: #f5f7f8;
+  color: #000;
+}
+main section:nth-child(1) .sec4 {
+  background-color: #dfe5e8;
+  color: #000;
+  padding: 1rem;
+  position: relative;
+}
+main section:nth-child(1) .sec4 button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 0;
+  background-color: #becbd2;
+  color: #000;
+}
+
+main section:nth-child(3) .sec2 .btns div:first-child {
+  text-align: center;
+  background-color: red;
+  width: 50%;
+  padding: 0.7rem 0;
+  color: white;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+main section:nth-child(3) .sec2 .btns div:last-child {
+  text-align: center;
+  background-color: green;
+  width: 50%;
+  padding: 0.7rem 0;
+  color: white;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+main section:nth-child(3) .sec2 .btns div:hover {
+  background-color: var(--btn-hover-color);
+  color: #000;
+}
+/* =========== Footer ===========  */
+footer {
+  background-color: var(--btn-color);
+  color: white;
+  padding-top: 10px;
+}
+footer > div {
+  height: 50px;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+footer div:last-child {
+  padding-top: 10px;
+  background-color: var(--second-color);
+}
+footer a {
+  color: var(--btn-hover-color);
+  text-decoration: underline;
+}
+
+/* =========== Media ===========  */
+@media (max-width: 900px) {
+  main {
+    margin: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+  /* Header adjustments for mobile */
+  header {
+    padding: 0 1rem;
+    position: relative;
+  }
+
+  .collapse {
+    display: block;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+  }
+
+  /* Navigation styles for mobile */
+  nav {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    height: 100vh;
+    width: 70%;
+    background-color: var(--second-color);
+    z-index: 1000;
+    transition: all 0.3s ease;
+    padding: 2rem;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
+  }
+
+  nav.active {
+    left: 0;
+  }
+
+  nav .close {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  nav ul {
+    flex-direction: column;
+    margin-top: 3rem;
+    gap: 2rem;
+  }
+
+  nav ul li a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.2rem;
+  }
+
+  /* Adjust main content when nav is open */
+  main {
+    margin: 1rem;
+  }
+}
