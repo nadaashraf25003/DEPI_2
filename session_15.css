@@ -55,6 +55,7 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 10px;
+  flex-wrap: wrap;
 }
 .mrgButton {
   margin-bottom: 1rem;
